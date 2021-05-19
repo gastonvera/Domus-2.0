@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+
+{% block content %}
+    <body class="imagen-fondo">
+        <div class="card mb-6" id="cartaNosotros">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="card-body">
+                        <h1 class="card-title" style=" color: lightgrey; border-bottom: solid lightgrey 1px;">Nuestra misión</h1>
+                        
+                        <p class="card-text" style=" font-size: 85%; color: lightgrey;"> Nuestro interes esta siempre puesto en el cliente y cumplir sus expectativas.</p>
+                        <br>
+                        <p class="card-text" style=" font-size: 85%; color: lightgrey;"> Somos una empresa con una larga trayectoria y basta experiencia en el mercado, nuestros clientes abalan siempre nuestros metodos y nos ponemos a su disposicion siempre en primer lugar. </p>
+                        <br>
+                        <p class="card-text" style=" font-size: 85%; color: lightgrey;"> Esperamos contar con su apoyo, asi comousted podra contar con el nuestro en todo momento.</p>
+
+                    </div>
+                </div>
+                <div class="col-md-6" id="imagenNosotros">
+                    <img src="{% static 'images/about us.jpg' %}" style=" border-radius:15px" alt="...">
+                </div>
+            </div>
+        </div>
+    </body>
+{% endblock %}

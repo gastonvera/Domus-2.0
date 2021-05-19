@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+<!-- Contenido de contacto -->
+{% block content %}
+<body class="imagen-fondo">
+    <div class="Container" id="Contenedor-Contacto">
+        <div class="row justify-content-evenly g-2">
+            <div class="col-xl-6 col-lg-6 col-md-7 col-sm-8 align-self-center">
+
+                <div class="map-container mx-auto">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.849717087455!2d-58.98963554870527!3d-27.442793922046825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94450c5e6f265787%3A0x7f7707f0a6393f77!2sAv.%20Rivadavia%20585%2C%20H3500%20Resistencia%2C%20Chaco!5e0!3m2!1ses-419!2sar!4v1620588586853!5m2!1ses-419!2sar" width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>  
+                    <div>
+                        <h5>Av. Rivadavia 585</h5>
+                        <h5>Resistencia, Chaco, Argentina</h5>
+                        <h5>(362) 444 4444</h5>
+                        <h5>info@domus.com</h5>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-7 col-sm-8 align-self-center">
+
+                <form class="FormularioContacto contact100-form  mx-auto">
+
+                    <h1 class="row justify-content-center" style="color: white;">Contacto</h1>
+                    <div class="row justify-content-center form-floating mb-1">
+                        <input type="name" class="form-control" id="floatingInput" placeholder="Nombre y Apellido" required>
+                        <label for="floatingInput" style="margin-left: 45px;">Nombre y Apellido</label>
+                    </div>
+
+                    <div class="row justify-content-center  form-floating mb-1">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                        <label for="floatingInput" style="margin-left: 45px;">Correo eléctronico</label>
+                    </div>
+
+                    <div class="row justify-content-center form-floating mb-1">
+                        <input type="tel" class="form-control" id="floatingInput" placeholder="Telefono" required> 
+                        <label class="" for="floatingInput" style="margin-left: 45px;">Teléfono</label>
+                    </div>
+
+                    <div class="row justify-content-center  form-floating mb-1">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="max-height: 75px; min-height: 75px;" required></textarea>
+                        <label for="floatingTextarea2" style="margin-left: 45px;">Consulta</label>
+                    </div>
+
+                    <div class="row justify-content-center col-12">
+                        <button type="submit" class="btn btn-primary"  id="Boton-Enviar">Enviar</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+{% endblock content %}

@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+<body>
+    <container w-50>
+        <div class="row justify-content-around" style="min-height: 550px; margin: 20px 0 0 0;">
+            <div class="col-xl-5 col-lg-6 col-md-7 col-sm-12 align-self-start">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" style="min-height: 400px; min-width: 500px; padding: 10% 0 10% 0;">
+
+                    <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+
+                    <div class="carousel-inner vertical">
+
+                    <div class="carousel-item active">
+                        <a href="{% static 'images/harmony5.jpg' %}"><img src="{% static 'images/harmony5.jpg' %}" class="d-block"  alt="..." style="min-height: 350px;"></a>
+                    </div>
+
+                    <div class="carousel-item" >
+                        <a href="{% static 'images/harmony7.jpg' %}"><img src="{% static 'images/harmony7.jpg' %}" class="d-block"  alt="..." style="min-height: 350px;"></a>
+                    </div>
+
+                    <div class="carousel-item" >
+                    <a href="{% static 'images/harmony8.jpg' %}"><img src="{% static 'images/harmony8.jpg' %}" class="d-block " alt="..." style="min-height: 350px;"></a>
+                    </div>
+
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                    </button>
+
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                    </button>
+
+                </div>
+            </div>
+            <div class="col-xl-7 col-lg-6 col-md-7 col-sm-12 align-self-center" style="background-color: rgb(255, 255, 255); min-height: 550px;">
+            
+            <div class="mt-3" style="float: right;">
+                <a href="{% url 'form_reserva' %}" class="btn btn-primary"  id="Boton-Enviar">Reservar Cita</a>
+            </div>
+            <h1> Torre Harmony - 190.000 USD</h1>
+            <h3 style="border-bottom: black 1px solid;"> PID: 34563</h3><br>
+            <div class="row">
+                <div class="col">
+                    <p> Piso: 14</p>
+                    <p> Departamento: C</p>
+                    <p> Frente y contrafrente: Frente</p>
+                    <p> Orientación: Norte</p>
+                    <p> Cocina: Si</p>
+                    <p> Comedor: Si</p>
+                    <p> Living: Si</p>
+                </div>
+                <div class="col">
+                    <p> Cochera: Si</p>
+                    <p> Balcón: Si</p>
+                    <p> Habitaciones: 2</p>
+                    <p> Baño: 2</p>
+                    <p> Lavadero: Si</p>
+                    <p> Expensas: $9.000</p>
+                </div>
+            </div>
+            </br>
+            <h2 style="border-bottom: black 1px solid;">Observaciones</h2></br>
+            <p>Excelente departamento ubicado en: Formosa 251, H3500BXF Resistencia, Chaco. El edificio cuenta con una terraza con  una inigualable vista de la ciudad de resistencia, spa, bar, quincho, pileta, gimnasio, con seguridad las 24 hs en el edificio y cierres electrónicos en todas las puertas para mayor seguridad.</p>
+            </div>
+        </div>
+    </container>
+</body>
+{% endblock %}

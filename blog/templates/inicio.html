@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+
+{% block content %}
+    <!-- #slider -->
+    <div id="carouselExampleCaptions" class="carousel slide p-3" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="height: 72vh">
+                <img src="{% static 'images/casa 3.jpeg' %}" class="d-block mx-auto" alt="..." style="height: 72vh">
+                <div class="carousel-caption d-none d-md-block" id="glasCarousel">
+                <h2 style="color: whitesmoke;">Encuentra la propiedad para tí</h2>
+                <p style="font-size: 90%; font-style: italic;"> Explore nuestro amplio catálogo de propiedades</p>
+                </div>
+            </div>
+
+            <div class="carousel-item" style="height: 72vh">
+                <img src="{% static 'images/casa 1.jpg' %}" class="d-block mx-auto my-auto" alt="..." style="height: 72vh">
+                <div class="carousel-caption d-none d-md-block" id="glasCarousel">
+                <h2 style="color: whitesmoke;">Siempre a su disposición</h2>
+                <p style="font-size: 90%; font-style: italic;"> Puedes contactarte con nosotros en cualquier momento</p>
+                </div>
+            </div>
+
+            <div class="carousel-item" style="height: 72vh">
+                <img src="{% static 'images/casa 2.jpg' %}" class="d-block mx-auto" alt="..." style="height: 72vh">
+                <div class="carousel-caption d-none d-md-block" id="glasCarousel">
+                <h2 style="color: whitesmoke;">Conozca sobre nosotros</h2>
+                <p style="font-size: 90%; font-style: italic;" > Conozca nuestra misión y objetivos</p>
+                </div>
+            </div>
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next"ìpue>
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+{% endblock %}

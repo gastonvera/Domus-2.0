@@ -1,0 +1,323 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block content %}
+    <body class="imagen-fondo">
+        <div id=headerPropiedades>
+            <h3 id=tituloPropiedades>Catálogo de Propiedades</h3> 
+        </div>
+        <div class="container">
+            <div class="row justify-content-evenly">
+
+                <div div class="col-xl-3 col-lg-4 col-md-4 col-sm-5">
+                    <div  class="sticky-top" id="filtrador">
+                        <h2 id="titulosFiltro">Realiza tu búsqueda</h2>
+                        <h4 id="titulosFiltro">Tipo de contrato</h4>
+                        <ul id="elementosFiltro">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                <label class="form-check-label" for="flexSwitchCheckChecked">Ventas</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                <label class="form-check-label" for="flexSwitchCheckChecked">Alquiler</label>
+                            </div>
+                        </ul>
+                        <h4 id="titulosFiltro">Zona</h4>
+                        <ul id="elementosFiltro">
+
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                <label class="form-check-label" for="flexSwitchCheckChecked">Microcentro</label>
+                            </div>
+
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                <label class="form-check-label" for="flexSwitchCheckChecked">Macrocentro</label>
+                            </div>
+
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                <label class="form-check-label" for="flexSwitchCheckChecked">Zonas aledañas</label>
+                            </div>
+                        </ul>
+                        <h4 id="titulosFiltro">Habitaciones</h4>
+                        <ul id="elementosFiltro">
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                <label class="form-check-label" for="flexSwitchCheckChecked">1 habitacion</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                <label class="form-check-label" for="flexSwitchCheckChecked">2 habitacion</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                <label class="form-check-label" for="flexSwitchCheckChecked">3 habitacion</label>
+                            </div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
+                                <label class="form-check-label" for="flexSwitchCheckChecked">4 habitacion</label>
+                            </div>
+                        </ul>
+
+                    </div>
+                </div>
+                <!-- DIV COLUMNA FILTROS -->  
+                
+                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-7">            
+                    <div>
+                        <div class="row justify-content-evenly">
+                            <div class="col-xl-5 col-lg-6 col-md-10 col-sm-12">
+                                <!--EMPIEZA CARTA-->
+                                <div class="card"  id = "cartaPropiedad">
+                                    <a href="{% url 'detalle' %}">
+                                        <div style="padding: 3%;">
+                                            <img src="{% static 'images/casa 2.jpg' %}" class="card-img-top" alt="..." style="border-radius: 8px;" id= "imagenesPropiedades">
+                                        </div>
+                                        <div class="card-body" id="caracteristicasPropiedades">
+                                            <h4 class="card-title text-center h4 border-bottom" id="caracteristicasPropiedades" >Torre Harmony</h4>
+                                            <div class="row justify-content-evenly">
+                                    
+                                                <div class="col-5 align-self-center " >
+                                                    <p class="card-text h6">U$D 190.000</p>
+                                                    <p class="card-text h6">PID: 34563</p>
+                                                </div>
+                                    
+                                                <div class="col-7" >
+                                                    <p>Superficie: 90m2</p>
+                                                    <p>Dormitorios: 2</p>
+                                                    <p>Baños: 2</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+
+                            </div>
+
+                            <div class="col-xl-5 col-lg-6 col-md-10 col-sm-12" >
+                                <!--EMPIEZA CARTA-->
+                                <div class="card"  id = "cartaPropiedad" >
+                                    
+                                    <div style="padding: 3%;">
+                                        <img src="{% static 'images/casa 1.jpg' %}" class="card-img-top" alt="..." style="border-radius: 8px;" id= "imagenesPropiedades">
+                                    </div>
+                                    <div class="card-body" id="caracteristicasPropiedades">
+                                        <h4 class="card-title text-center h4 border-bottom" id="caracteristicasPropiedades" >Casa Moderna</h4>
+                                        <div class="row justify-content-evenly">
+                                
+                                            <div class="col-5 align-self-center " >
+                                                <p class="card-text h6">U$D 200.000</p>
+                                                <p class="card-text h6">PID: 3875663</p>
+                                            </div>
+                                
+                                            <div class="col-7" >
+                                                <p>Superficie: 110m2</p>
+                                                <p>Dormitorios: 3</p>
+                                                <p>Baños: 1</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                                <!--TERMINA CARTA-->
+                            </div>
+                        </div>               
+                    </div>
+
+                    <div>
+                        <div class="row justify-content-evenly">
+                            <div class="col-xl-5 col-lg-6 col-md-10 col-sm-12">
+                                <!--EMPIEZA CARTA-->
+                                <div class="card"  id = "cartaPropiedad">
+
+                                    <dive style="padding: 3%;">
+                                        <img src="{% static 'images/casa 3.jpeg' %}" class="card-img-top" alt="..." style="border-radius: 8px;" id= "imagenesPropiedades">
+                                    </dive>
+                                
+                                    <div class="card-body" id="caracteristicasPropiedades">
+                                
+                                        <h4 class="card-title text-center h4 border-bottom" id="caracteristicasPropiedades" >Casa Invernizzi</h4>
+                                
+                                        <div class="row justify-content-evenly">
+                                
+                                            <div class="col-5 align-self-center " >
+                                                <p class="card-text h6">U$D 190.000</p>
+                                                <p class="card-text h6">PID: 78455</p>
+                                            </div>
+                                
+                                            <div class="col-7">
+                                                <p>Superficie: 110m2</p>
+                                                <p>Dormitorios: 2</p>
+                                                <p>Baños: 1</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <!--TERMINA CARTA-->
+                            </div>
+
+                            <div class="col-xl-5 col-lg-6 col-md-10 col-sm-12">
+                                <!--EMPIEZA CARTA-->
+                                <div class="card"  id = "cartaPropiedad">
+
+                                    <dive style="padding: 3%;">
+                                        <img src="{% static 'images/casa 4.jpg' %}" class="card-img-top" alt="..." style="border-radius: 8px;" id= "imagenesPropiedades">
+                                    </dive>
+                                
+                                    <div class="card-body" id="caracteristicasPropiedades">
+                                
+                                        <h4 class="card-title text-center h4 border-bottom" id="caracteristicasPropiedades">Casa Simpson</h4>
+                                
+                                        <div class="row justify-content-evenly">
+                                
+                                            <div class="col-5 align-self-center " >
+                                            <p class="card-text h6">U$D 500.000</p>
+                                            <p class="card-text h6">PID: 25693</p>
+                                            </div>
+                                
+                                            <div class="col-7">
+                                            <p>Superficie: 90m2</p>
+                                            <p>Dormitorios: 3</p>
+                                            <p>Baños: 3</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <!--TERMINA CARTA-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="row justify-content-evenly">
+                            <div class="col-xl-5 col-lg-6 col-md-10 col-sm-12">
+                                <!--EMPIEZA CARTA-->
+                                <div class="card"  id = "cartaPropiedad">
+
+                                    <dive style="padding: 3%;">
+                                        <img src="{% static 'images/casa 5.jpg' %}" class="card-img-tops" alt="..." style="border-radius: 8px;" id= "imagenesPropiedades">
+                                    </dive>
+                                
+                                    <div class="card-body" id="caracteristicasPropiedades">
+                                
+                                        <h4 class="card-title text-center h4 border-bottom" id="caracteristicasPropiedades" >Departamento Castelar</h4>
+                                
+                                        <div class="row justify-content-evenly">
+                                            <div class="col-5 align-self-center " >
+                                                <p class="card-text h6">U$D 100.000</p>
+                                                <p class="card-text h6">PID: 14563</p>
+                                            </div>
+                                
+                                            <div class="col-7" >
+                                                <p>Superficie: 70m2</p>
+                                                <p>Dormitorios: 1</p>
+                                                <p>Baños: 1</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <!--TERMINA CARTA-->
+                            </div>
+
+                            <div class="col-xl-5 col-lg-6 col-md-10 col-sm-12">
+                                <!--EMPIEZA CARTA-->
+                                <div class="card"  id = "cartaPropiedad">
+
+                                    <dive style="padding: 3%;">
+                                        <img src="{% static 'images/casa 6.jpg' %}" class="card-img-top" alt="..." style="border-radius: 8px;" id= "imagenesPropiedades">
+                                    </dive>
+                                
+                                    <div class="card-body" id="caracteristicasPropiedades">
+                                
+                                        <h4 class="card-title text-center h4 border-bottom" id="caracteristicasPropiedades">Departamento Illidan</h4>
+                                
+                                        <div class="row justify-content-evenly">
+                                
+                                            <div class="col-5 align-self-center " >
+                                            <p class="card-text h6">U$D 150.000</p>
+                                            <p class="card-text h6">PID: 345563</p>
+                                            </div>
+                                
+                                            <div class="col-7" >
+                                            <p>Superficie: 65m2</p>
+                                            <p>Dormitorios: 2</p>
+                                            <p>Baños: 1</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--TERMINA CARTA-->
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="row justify-content-evenly">
+                            <div class="col-xl-5 col-lg-6 col-md-10 col-sm-12">
+                                <!--EMPIEZA CARTA-->
+                                <div class="card"  id = "cartaPropiedad">
+
+                                    <dive style="padding: 3%;">
+                                        <img src="{% static 'images/casa 7.jpg' %}" class="card-img-top" alt="..." style="border-radius: 8px;" id= "imagenesPropiedades">
+                                    </dive>
+                                
+                                    <div class="card-body" id="caracteristicasPropiedades">
+                                
+                                        <h4 class="card-title text-center h4 border-bottom"id="caracteristicasPropiedades">Departamento Volare</h4>
+                                
+                                        <div class="row justify-content-evenly">
+                                
+                                            <div class="col-5 align-self-center " >
+                                            <p class="card-text h6">U$D 180.000</p>
+                                            <p class="card-text h6">PID: 7777</p>
+                                            </div>
+                                
+                                            <div class="col-7" >
+                                            <p>Superficie: 80m2</p>
+                                            <p>Dormitorios: 3</p>
+                                            <p>Baños: 1</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--TERMINA CARTA-->
+                            </div>
+
+                            <div class="col-xl-5 col-lg-6 col-md-10 col-sm-12">
+                                <!--EMPIEZA CARTA-->
+                                <div class="card"  id = "cartaPropiedad">
+
+                                    <dive style="padding: 3%;">
+                                        <img src="{% static 'images/casa 8.jpg' %}" class="card-img-top" alt="..." style="border-radius: 8px;" id= "imagenesPropiedades">
+                                    </dive>
+                            
+                                    <div class="card-body" id="caracteristicasPropiedades">
+                            
+                                        <h4 class="card-title text-center h4 border-bottom"  id="caracteristicasPropiedades">Casa Bella</h4>
+                                
+                                        <div class="row justify-content-evenly">
+                                
+                                            <div class="col-5 align-self-center " >
+                                                <p class="card-text h6">U$D 400.000</p>
+                                                <p class="card-text h6">PID: 354393</p>
+                                            </div>
+                                    
+                                            <div class="col-7" >
+                                                <p>Superficie: 300m2</p>
+                                                <p>Dormitorios: 4</p>
+                                                <p>Baños: 3</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </body>
+{% endblock %}

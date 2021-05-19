@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+<!-- Contenido de contacto -->
+{% block content %}
+<body class="imagen-fondo">
+    <div class="Container" id="Contenedor-Contacto">
+        <div class="row justify-content-evenly">
+            <div class="col-xl-4 col-lg6 col-md-7 col-sm-12">
+                <form class="FormularioContacto contact100-form  mx-auto">
+
+                    <h1 class="row justify-content-center" style="color: white;">Formulario de Reserva</h1>
+
+                    <div class="row justify-content-center form-floating mb-1">
+                        <input type="name" class="form-control" id="floatingInput" placeholder="Nombre y Apellido" required>
+                        <label for="floatingInput" style="margin-left: 45px;">Nombre y Apellido</label>
+                    </div>
+
+                    <div class="row justify-content-center  form-floating mb-1">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                        <label for="floatingInput" style="margin-left: 45px;">Correo eléctronico</label>
+                    </div>
+
+                    <div class="row justify-content-center form-floating mb-1">
+                        <input type="number" class="form-control" id="floatingInput" placeholder="Telefono" required> 
+                        <label class="" for="floatingInput" style="margin-left: 45px;">Teléfono</label>
+                    </div>
+
+                    <div class="row justify-content-center  form-floating mb-1">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="max-height: 75px; min-height: 75px;" required></textarea>
+                        <label for="floatingTextarea2" style="margin-left: 45px;">Comentarios</label>
+                    </div>
+
+                    <div class="row justify-content-center col-12">
+                        <button type="submit" class="btn btn-primary"  id="Boton-Enviar">Reservar Cita</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+{% endblock %}  
